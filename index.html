@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+
+		<title>Area Calculator</title>
+	</head>
+	<body>
+		<div class="app">
+			<div class="container">
+				<div class="squareContainer">
+					<div class="square" id="square"></div>
+				</div>
+				<div class="inputs">
+					<p class="areaText" id="areaText"></p>
+					<div class="input">
+						<input
+							type="range"
+							id="heightInput"
+							min="0"
+							max="250"
+							value="100"
+							onchange="updateSquare()"
+							oninput="updateLabel()"
+						/>
+						<label for="heightInput" id="heightLabel">000</label>
+					</div>
+					<div class="input">
+						<input
+							type="range"
+							id="widthInput"
+							min="0"
+							max="250"
+							value="150"
+							onchange="updateSquare()"
+							oninput="updateLabel()"
+						/>
+						<label for="widthInput" id="widthLabel">000</label>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="./script.js" defer></script>
+	</body>
+</html>
